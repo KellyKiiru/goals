@@ -7,6 +7,9 @@ import { GoalComponent } from './goal/goal.component';
 import { GoalDetailComponent } from './goal-detail/goal-detail.component';
 import { StrikeThroughDirective } from './strike-through.directive';
 import { DateCountPipe } from './date-count.pipe';
+import { FormsModule } from '@angular/forms';
+import { GoalFormComponent } from './goal-form/goal-form.component';
+
 
 @NgModule({
   declarations: [
@@ -15,10 +18,12 @@ import { DateCountPipe } from './date-count.pipe';
     GoalDetailComponent,
     StrikeThroughDirective,
     DateCountPipe,
+    GoalFormComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

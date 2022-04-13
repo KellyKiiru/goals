@@ -7,5 +7,5 @@
 <div class="goalDetail">
     <p>{{goal?.description}}</p>
     <p>This goal will be deleted in {{goal?.completeDate|dateCount}} days</p>
-    <button (click)="goalDelete(true)" >Delete</button>
+    <button style="position: relative; bottom: 10px;" class="btn btn-danger" (click)="goalDelete(true)" >Delete</button>
 </div>
